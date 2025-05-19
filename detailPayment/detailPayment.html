@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Payment</title>
+    <link rel="stylesheet" href="./detailPayment.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="/assets/w-logo.png" alt="" /></div>
+        <div class="nav-menu">
+            <ul class="nav-items">
+                <!-- ini nav nya buat filter konser aja -->
+                <li class="nav-item"><a href="../dashboard/dashboard.html">Home</a></li>
+                <!-- <li class="nav-item"><a href="#">K-Pop</a></li>
+                <li class="nav-item"><a href="#">Rock</a></li>
+                <li class="nav-item"><a href="#">Jazz</a></li>
+                <li class="nav-item"><a href="#">Classic</a></li> -->
+            </ul>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Cari konser..." />
+            <button>Cari</button>
+        </div>
+    </nav>
+
+    <div class="card-wrapper">
+        <div class="card-payment">
+            <div class="detail-payment">
+                <h3>ConC World Tour</h3>
+                <p>CAT 1A</p>
+                <p>Clear View Stage</p>
+            </div>
+            <div class="detail-price">
+                <h3>Rp. 1,000,000</h3>
+                <select name="payment-method" class="payment-select" id="paymentSelect">
+                    <option value="" disabled selected>Pilih Metode Pembayaran</option>
+                    <option value="va">Virtual Account</option>
+                    <option value="qris">QRIS</option>
+                    <option value="transfer">Transfer</option>
+                    <a href="../paymentMethod/va.html"></a>
+                    <a href="../paymentMethod/qris.html"></a>
+                    <a href="../paymentMethod/transfer.html"></a>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./detailPayment.js"></script> -->
+</body>
+
+</html>
