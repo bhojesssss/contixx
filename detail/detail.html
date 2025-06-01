@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Concert</title>
     <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo"><img src="/assets/w-logo.png" alt="" /></div>
+        <div class="logo"><img src="../assets/w-logo.png" alt="" /></div>
         <div class="nav-menu">
             <ul class="nav-items">
                 <!-- ini nav nya buat filter konser aja -->
@@ -28,9 +29,25 @@
     </nav>
 
     <div class="detail-concert">
-        <div class="concert-loc"></div>
+        <div class="concert-loc">
+            <div class="mapping-loc">
+                <div class="left-loc">
+                    <img src="../assets/mapping-loc/Group 1.svg" alt="2A" data-cat="2A">
+                    <img src="../assets/mapping-loc/Group 2.svg" alt="1A" data-cat="1A">
+                </div>
+                <div class="mid-loc">
+                    <img src="../assets/mapping-loc/Group 3.svg" alt="3C" data-cat="3C">
+                    <img src="../assets/mapping-loc/Group 4.svg" alt="1.5" data-cat="1.5">
+                    <img src="../assets/mapping-loc/Group 7.svg" alt="Stage" id="reset-filter">
+                </div>
+                <div class="right-loc">
+                    <img src="../assets/mapping-loc/Group 5.svg" alt="2B" data-cat="2B">
+                    <img src="../assets/mapping-loc/Group 6.svg" alt="1B" data-cat="1B">
+                </div>
+            </div>
+        </div>
         <div class="concert-price-carousel">
-            <div class="card-price">
+            <div class="card-price" data-cat="1A">
                 <div class="card-detail">
                     <h3>CAT 1A</h3>
                     <p>1 Seat</p>
@@ -43,7 +60,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card-price">
+            <div class="card-price" data-cat="1B">
                 <div class="card-detail">
                     <h3>CAT 1B</h3>
                     <p>1 Seat</p>
@@ -56,7 +73,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card-price">
+            <div class="card-price" data-cat="2A">
                 <div class="card-detail">
                     <h3>CAT 2A</h3>
                     <p>1 Seat</p>
@@ -69,7 +86,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card-price">
+            <div class="card-price" data-cat="2B">
                 <div class="card-detail">
                     <h3>CAT 2B</h3>
                     <p>1 Seat</p>
@@ -82,7 +99,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card-price">
+            <div class="card-price" data-cat="1.5">
                 <div class="card-detail">
                     <h3>CAT 1.5</h3>
                     <p>1 Seat</p>
@@ -95,7 +112,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card-price">
+            <div class="card-price" data-cat="3C">
                 <div class="card-detail">
                     <h3>CAT 3C</h3>
                     <p>1 Seat</p>
@@ -110,6 +127,41 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <p>
+                        About - Learn more about our venue's history and mission
+                    </p>
+                    <p>
+                        Privacy Policy - Read our policy on how we protect your personal information.
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-social">
+                        <a href="#" class="footer-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        Contact - Get in touch with us for inquiries and bookings.
+                    </p>
+                    <p>
+                        Terms of Service - Review the terms and conditions for using our services.
+                    </p>
+                </div>
+            </div>
+            <span class="footer__copy">
+                &#169; 2025 The Stage. All rights reserved.
+            </span>
+        </div>
+    </footer>
+    <script src="./detail.js" defer></script>
+
 </body>
 
 </html>

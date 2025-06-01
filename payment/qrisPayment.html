@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRIS Payment</title>
     <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo"><img src="/assets/w-logo.png" alt="" /></div>
+        <div class="logo"><img src="../assets/w-logo.png" alt="" /></div>
         <div class="nav-menu">
             <ul class="nav-items">
                 <!-- ini nav nya buat filter konser aja -->
@@ -29,10 +30,43 @@
 
     <div class="container">
         <div class="payment-wrapper-qris">
-            <img src="../assets/qr-code.png" alt="">
-            <button>Download QR</button>
+            <img src="../assets/qr-code.png" alt="QRIS" id="qris-img">
+            <button id="download-btn">Download QR</button>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <p>
+                        About - Learn more about our venue's history and mission
+                    </p>
+                    <p>
+                        Privacy Policy - Read our policy on how we protect your personal information.
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-social">
+                        <a href="#" class="footer-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        Contact - Get in touch with us for inquiries and bookings.
+                    </p>
+                    <p>
+                        Terms of Service - Review the terms and conditions for using our services.
+                    </p>
+                </div>
+            </div>
+            <span class="footer__copy">
+                &#169; 2025 The Stage. All rights reserved.
+            </span>
+        </div>
+    </footer>
+    <script src="./payment.js"></script>
 </body>
 
 </html>

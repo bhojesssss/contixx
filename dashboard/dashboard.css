@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
 }
 
 body {
@@ -85,6 +86,8 @@ body {
 
 .upcoming-con h2 {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .kpop-con {
@@ -94,6 +97,8 @@ body {
 
 .kpop-con h2 {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .rock-con {
@@ -103,6 +108,8 @@ body {
 
 .rock-con h2 {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .jazz-con {
@@ -112,6 +119,8 @@ body {
 
 .jazz-con h2 {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .classic-con {
@@ -121,6 +130,8 @@ body {
 
 .classic-con h2 {
     color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .card-concert {
@@ -150,6 +161,7 @@ body {
 
 .detail-card {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -212,4 +224,49 @@ body {
 
 .card-carousel::-webkit-scrollbar {
     display: none;
+}
+
+.footer {
+    margin-top: 120px;
+    background-color: #2c2c2c;
+    color: #A1ABB5;
+}
+
+.footer-container {
+    padding: 60px 48px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-content p {
+    font-size: 1.25rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-link i {
+    font-size: 1.5rem;
+    color: #A1ABB5;
+}
+
+.footer__copy {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
 }

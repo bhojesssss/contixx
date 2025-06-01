@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transfer Payment</title>
     <link rel="stylesheet" href="./payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo"><img src="/assets/w-logo.png" alt="" /></div>
+        <div class="logo"><img src="../assets/w-logo.png" alt="" /></div>
         <div class="nav-menu">
             <ul class="nav-items">
                 <!-- ini nav nya buat filter konser aja -->
@@ -31,7 +32,9 @@
         <div class="payment-wrapper">
             <div class="payment-detail">
                 <h3>Transfer</h3>
-                <h3>192047871032 <p>Copy</p>
+                <h3>
+                    <span id="va-number">192047871032</span>
+                    <p id="copy-btn" style="cursor: pointer; display: inline; color: blue;">Copy</p>
                 </h3>
                 <h3>ConC World Tour</h3>
                 <h3>CAT 1A</h3>
@@ -46,7 +49,39 @@
             </div>
         </div>
     </div>
-
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <p>
+                        About - Learn more about our venue's history and mission
+                    </p>
+                    <p>
+                        Privacy Policy - Read our policy on how we protect your personal information.
+                    </p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-social">
+                        <a href="#" class="footer-link"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <p>
+                        Contact - Get in touch with us for inquiries and bookings.
+                    </p>
+                    <p>
+                        Terms of Service - Review the terms and conditions for using our services.
+                    </p>
+                </div>
+            </div>
+            <span class="footer__copy">
+                &#169; 2025 The Stage. All rights reserved.
+            </span>
+        </div>
+    </footer>
+    <script src="./payment.js"></script>
 </body>
 
 </html>
